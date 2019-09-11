@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Weather forecast</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+	<section class="background">
+		<div class="search-bar">
+			<input type="checkbox" class="toggler">
+			<h1 class="title">Weather forecast</h1>
+			<input type="text" class="search" placeholder="Type the name of the city :)" style="font-size: 0.8em">
+			<img alt="search" class="ic-search-one" src="styles/icon-search.png">
+			<img alt="search" class="ic-search-two" src="styles/search-white.png">
+		</div>
+		<div class="res">
+			<section class="container">
+
+			<div class="top">
+						<div class="top-left">
+							<div class="city"></div>
+							<div data-day="0" class="date"></div>
+						</div>
+						<div class="top-right">
+							<div class="time"></div>
+						</div>
+			</div>
+			<div class="results">
+				<div class="each-day selected">
+					<div data-day="0" class="day today-0"></div>
+					<img class="icon icon-1">
+					<div class="temperature"></div>
+				</div>
+				<div class="each-day">
+					<div data-day="1" class="day today-1"></div>
+					<img class="icon icon-1">
+					<div class="temperature"></div>
+				</div>
+				<div class="each-day">
+					<div data-day="2" class="day today-2"></div>
+					<img class="icon icon-2">
+					<div class="temperature"></div>
+				</div >
+				<div class="each-day">
+				<div data-day="3" class="day today-3"></div>
+					<img class="icon icon-3">
+					<div class="temperature"></div>
+				</div>
+				<div class="each-day">
+				<div data-day="4" class="day today-4"></div>
+					<img class="icon icon-4">
+					<div class="temperature"></div>
+				</div>
+				<div class="each-day">
+				<div data-day="5" class="day today-5"></div>
+					<img class="icon icon-5">
+					<div class="temperature"></div>
+				</div>
+
+			</div>
+
+			<div class="card">
+
+					<div class="center-left">
+						<div class="weather-result result"></div>
+						<div class="big-img">
+							<img class="big-icon">
+						</div>
+						<div class="temp"> 
+							<img class="ic" alt="thermometer" src="styles/thermometer-icon.svg">
+							<div class="big-temp"></div>
+						</div>
+					</div>	
+
+				<div class="center-right">
+					<div class="min-max">
+							<div class="max-temp">
+								<img class="ic" alt="thermometer-high" src="styles/thermometer-icon-high.svg">
+								<div class="maxtemp-result result"></div>
+							</div>
+							<div class="min-temp">
+								<img class="ic" alt="thermometer-low" src="styles/thermometer-low-icon.svg">
+								<div class="mintemp-result result"></div>
+							</div>
+					</div>
+					<div class="humidity">
+						<img class="ic" alt="humidity-icon" src="styles/drop-icon.svg">
+						<div class="humidity-result result"></div>
+					</div>
+					<div class="wind-speed">
+						<img class="wind-icon" alt="wind-arrow" src="styles/wind-icon.svg">
+						<div class="wind-direction-result result"></div>
+						<div class="wind-speed-result result"></div>
+					</div>
+				</div>
+			</div>
+
+			</section>
+		</div>
+		<p class="mentions">Powered by <a href="https://www.metaweather.com/">Metaweather</a></p>
+	</section> 
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
