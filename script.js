@@ -17,7 +17,7 @@ async function getData (city) {
 		//console.log(city);
 		//console.log(result);
 		const data = await result.json();
-		//console.log(data);
+		console.log(data);
 		const woeid = data[0].woeid;
 		
 		const results = await fetch(`https://www.metaweather.com/api/location/${woeid}`);
