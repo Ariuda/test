@@ -23,11 +23,10 @@ body {
 
 
 .background {
-	height: 100vh;
-	/*width: 100vw;*/
+	/*height: 100vh;
+	width: 100vw;*/
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	/*align-items: center;*/
 
 }
@@ -110,25 +109,21 @@ body {
 	width: 40px;
 }
 
-.res {
-	height: 100%;
-}
-
 .container {
-	opacity: 0;
 	display: flex;
 	flex-direction: column;
 	background: rgba(63,85,122,0.40);
 	align-items: center;
-	height: 100%;
+	height: 100vh;
 }
 
 
 .loader {
-	margin: 40px auto;
+	/*background-color: red;*/
+	margin: 130px auto;
 	text-align: center;
-	z-index: 9999;
-
+	/*transform-origin: 50% 50%;
+	animation: rotate 1.5s infinite linear;*/
 }
 
 .loader span {
@@ -184,13 +179,16 @@ body {
 	font-size: 0.6em;
 }
 
+.daily-results {
+	width: 60%;
+}
+
 .card {
 	margin: 0 0 30px 0;
 	display: flex;
 	justify-content: center;
 	background: rgba(144, 162, 185, 0.71);
 	border-radius: 10px;
-	width: 40%;
 	
 }
 
@@ -295,7 +293,11 @@ body {
 
 .results img {
 	width: 40px;
-	padding: 8px 0;
+	padding: 8px 20px;
+}
+
+.results > div > div {
+	padding: 0 20px;
 }
 
 .selected {
@@ -304,8 +306,10 @@ body {
 
 .mentions {
 	text-align: right;
+	padding: 10px 0px;
 	color: white;
 	font-size: 0.8em;
+	background: rgba(63,85,122,0.40);
 	width: 100%;
 }
 
@@ -314,7 +318,11 @@ body {
 	padding-right: 10px;
 }
 
-
+@media only screen and (max-width: 1024px) {
+	.results > div {
+		margin: 10px 0px;
+	}
+}
 
 
 
